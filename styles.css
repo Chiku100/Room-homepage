@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@500;600;700&display=swap');
+
+:root {
+    --Dark_Gray: hsl(0, 0%, 63%);
+    --Black: hsl(0, 0%, 0%);
+    --White: hsl(0, 0%, 100%);
+    --Very_Dark_Gray: hsl(0, 0%, 27%);
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    transition: all 0.4s linear;
+}
+
+
+html,
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    height: 100%;
+    font-family: 'League Spartan', sans-serif;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+    isolation: isolate;
+}
+.attribution{
+    margin: 2rem;
+    display: block;
+}
+.attribution a{
+    color: var(--Black);
+}
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(54, 61, 67, 0.647);
+    display: flex;
+    justify-content: center;
+    place-items: center;
+    transition: var(--transition);
+    visibility: hidden;
+    z-index: -10;
+}
+
+.close {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+}
+
+.open-modal {
+    visibility: visible;
+    z-index: 10;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.4rem;
+}
+
+.container {
+    display: flex;
+    height: 70%;
+}
+
+a {
+    color: var(--White);
+}
+
+nav {
+
+    width: 70%;
+    background: url("./images/desktop-image-hero-1.jpg");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: 3rem;
+
+}
+
+p {
+    color: var(--Dark_Gray);
+}
+
+.op {
+    display: none;
+}
+
+span {
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 1rem;
+    /* color: rgb(188, 16, 16); */
+    text-transform: uppercase;
+    letter-spacing: 0.8rem;
+
+}
+
+.shop {
+    animation: waviy 2s infinite;
+    animation-delay: calc(1s * var(--i));
+    display: flex;
+    align-items: center;
+}
+
+.shop:hover {
+
+    opacity: 0.4;
+}
+
+.desknav li:hover {
+    border-bottom: 1px solid var(--White);
+}
+
+.shop img {
+    width: 3rem;
+    height: 1rem;
+}
+
+ul {
+    transform: translate(1);
+    padding: 4rem 2rem;
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+
+ul .icon {
+    height: 1rem;
+}
+
+li a {
+    color: var(--White);
+}
+
+.right {
+    width: 50%;
+    /* padding: 5rem; */
+}
+
+.right article {
+    padding: 5rem 4rem 3rem;
+    height: 80%;
+}
+
+.box {
+    display: flex;
+}
+
+.box picture {
+    /* width: 100%; */
+}
+
+.box article {
+    width: 37%;
+    padding: 3rem;
+}
+
+.buttons {
+    display: flex;
+    height: auto;
+    justify-content: left;
+    align-items: flex-end;
+    height: 20%;
+    /* background-color: yellowgreen; */
+}
+
+.buttons button {
+    border: none;
+    cursor: pointer;
+    width: 4rem;
+    height: 4rem;
+    background-color: var(--Black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: row; */
+
+}
+
+nav div {
+    display: none;
+}
+
+
+@keyframes waviy {
+
+    0%,
+    40%,
+    100% {
+        transform: scale(1);
+        /* color: var(--Black); */
+    }
+
+    20% {
+        transform: scale(1.03);
+        /* color: rgb(64, 195, 205); */
+    }
+}
+
+@media screen and (max-width:1200px) {
+
+    main {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav div {
+        display: block;
+        display: flex;
+        /* justify-content: space-evenly; */
+    }
+
+    i {
+        color: white;
+        margin: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    .altlogo {
+        height: 1rem;
+        margin-left: 30% !important;
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    h2 {
+        text-transform: uppercase;
+        font-size: 1rem;
+        letter-spacing: 0.4rem;
+    }
+
+    section.container {
+        width: 100%;
+        flex-direction: column;
+        height: 100%;
+
+    }
+
+    .op {
+        height: 20rem;
+        display: flex;
+    }
+
+    .right {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    nav {
+        width: 100%;
+        /* height: 100vh; */
+    }
+
+    picture {
+        object-fit: cover;
+    }
+
+    .right article {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+
+    span {
+        font-weight: 700;
+        cursor: pointer;
+        margin-top: 1rem;
+        /* color: rgb(188, 16, 16); */
+        text-transform: uppercase;
+        letter-spacing: 0.8rem;
+
+    }
+
+    .shop {
+        animation: waviy 2s infinite;
+        animation-delay: calc(1s * var(--i));
+        display: flex;
+        align-items: center;
+    }
+
+    .shop img {
+        width: 3rem;
+        height: 1rem;
+    }
+
+    .modal-container {
+        transform: translateY(-100%);
+        /* transition: all 0.8s linear; */
+    }
+
+    .navbar {
+        transform: translateY(0);
+        background-color: var(--White);
+        width: 100%;
+        color: var(--Black);
+        position: fixed;
+        top: 0;
+        /* left: 0; */
+        justify-content: space-between;
+    }
+
+    ul .icon {
+        display: none;
+        height: 2rem;
+        width: 2rem;
+    }
+
+    ul li a {
+        font-size: 1rem;
+        color: var(--Black);
+    }
+
+    .right {
+        width: 100%;
+        /* padding: 5rem; */
+    }
+
+    .right article {
+        padding: 2rem;
+        height: 80%;
+    }
+
+    .box {
+        display: flex;
+    }
+
+    .right .buttons {
+        display: none;
+    }
+
+    .desknav {
+        display: none;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-start;
+    }
+
+    section.box {
+        flex-direction: column;
+    }
+
+    .box article {
+        width: 100%;
+        padding: 3rem;
+    }
+
+    picture img {
+        width: 100%;
+    }
+}

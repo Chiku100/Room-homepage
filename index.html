@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+
+      <nav>
+        <div class="op">
+          <i class="fa-solid fa-bars"></i>
+          <img class="altlogo" src="./images/logo.svg" alt="logo">
+        </div>
+        <ul class="desknav">
+          <img class="icon" src="./images/logo.svg" alt="logo">
+          <li><a href="#">home</a></li>
+          <li><a href="#">shop</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+        <div class="modal-overlay">
+          <ul class="modal-container">
+            <img class="icon" src="./images/logo.svg" alt="logo">
+            <img class="close" src="./images/icon-close.svg" alt="icon-close">
+            <li><a href="#">home</a></li>
+            <li><a href="#">shop</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">contact</a></li>
+          </ul>
+        </div>
+      
+        <div class="navigation">
+          <div class="buttons">
+            <button id="back" type="button"><img src="./images/icon-angle-left.svg" alt="icon-angle-left"></button>
+            <button id="next" type="button"><img src="./images/icon-angle-right.svg" alt="icon-angle-right"></button>
+          </div>
+        </div>
+      </nav>
+      <div class="right">
+        <article>
+          <h1>Discover innovative ways to decorate</h1>
+          <p> We provide unmatched quality, comfort, and style for property owners across the country.
+            Our experts combine form and function in bringing your vision to life. Create a room in your
+            own style with our collection and make your property a reflection of you and what you love.</p>
+          <div class="shop">
+            <span data-text="Shop now">Shop now</span>
+            <img src="./images/icon-arrow.svg" alt="icon-arrow">
+          </div>
+        </article>
+
+        <div class="buttons">
+          <button id="back" type="button"><img src="./images/icon-angle-left.svg" alt="icon-angle-left"></button>
+          <button id="next" type="button"><img src="./images/icon-angle-right.svg" alt="icon-angle-right"></button>
+        </div>
+      </div>
+    </section>
+    <section class="box">
+      <picture>
+        <source media="(min-width: 650px)" srcset="./images/image-about-dark.jpg">
+        <source media="(min-width: 165px)" srcset="./images/image-about-dark.jpg">
+        <img src="./images/image-about-dark.jpg">
+      </picture>
+      <article>
+        <h2>About our furniture</h2>
+        <p>Our multifunctional collection blends design and function to suit your individual taste.
+          Make each room unique, or pick a cohesive theme that best express your interests and what
+          inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+          or anything in between. Product specialists are available to help you create your dream space.</p>
+      </article>
+      <picture>
+        <source media="(min-width: 650px)" srcset="./images/image-about-light.jpg">
+        <source media="(min-width: 165px)" srcset="./images/image-about-light.jpg">
+        <img src="./images/image-about-light.jpg">
+      </picture>
+    </section>
+  </main>
+
+  <script src="./index.js"></script>
+  
+</body>
+<!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://twitter.com/goodjujutrate">Abhilash</a>.
+  </div> -->
+</html>
